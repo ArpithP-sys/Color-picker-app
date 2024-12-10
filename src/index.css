@@ -1,0 +1,71 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
+  background: url('C:\Users\Arpith Poojary\Desktop\newreact\onchange\src\assets\image.png') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.4); 
+  z-index: -1;
+}
+h1{
+
+  font-weight: bolder;
+  margin: 50px;
+  font-size:4rem;
+
+}
+.color-picker-container
+{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.color-display
+{
+  width:300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  border: 5px solid black;
+  box-shadow: 3px 3px 4px 2px black;
+  border-radius: 1.5rem;
+  border: none;
+  transition:0.10s ease;
+  margin-bottom: 25px;
+ 
+}
+.color-display p{
+  text-align: center;
+  font-size: 1.7rem;
+}
+label{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+input[type="color"]
+{
+  width:75px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 0.7rem;
+  border: 2.5px solid hs1(0,0%,80%);
+}
